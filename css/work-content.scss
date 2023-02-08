@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+
+
+@import "mixin.scss";
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+}
+
+.tab-content{
+    .card-list{//카드 4개
+        flex-basis: 28%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+        .card-box{//각자 카드
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 10px;
+            flex-basis: 49%;
+            height: 290px;
+            &.on{
+                filter: brightness(20%);
+                transform: scale(0.9);
+            }
+            &.active{
+                filter: brightness(100%);
+            }
+            .image{
+                width: 95%;
+                margin: 7px auto 0;
+                height: 230px;
+                border: 1px solid #000;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            p{
+                text-align: right;
+                font-size: 12px;
+            }
+            h3{
+                text-align: center;
+                font-weight: bold;
+                font-family: $c-font;
+                padding-bottom: 2px;
+                font-size: 16px;
+            }
+        }
+    }
+    .card-detail{
+        flex-basis: 70%;
+        height: 100%;
+        .detail-content-wrap{
+            display: none;
+            .detail-content{
+                display: flex;
+                .detail-left{//사진 틀
+                    flex-basis: 40%;
+                    height: 500px;
+                    border-radius: 25px;
+                    background-color: $card-detail-color;
+                    display: flex;
+                    align-items: center;
+                    &::after{
+                        content: "";
+                        width: 2px;
+                        height: 93%;
+                        border-right: 2px dashed #000 ;
+                    }
+                    .image{
+                        border: 2px solid #000;
+                        border-radius: 10px;
+                        width: 90%;
+                        height: 350px;
+                        margin: 0 auto;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .detail-right{
+                    flex-basis: 59%;
+                    height: 500px;
+                    border-radius: 25px;
+                    background-color: $card-detail-color;
+                    .work-content{
+                        .work-desc{
+                            width: 90%;
+                            margin: 10px auto;
+                            height: 80%;
+                            h3{
+                                width: 100%;
+                                font-size: 45px;
+                                font-family: $c-font;
+                                position: relative;
+                                text-align: center;
+                                padding-top: 20px;
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: #000;
+                                    position: absolute;
+                                    bottom: 0px;
+                                    left: 0px;
+                                }
+                            }
+                            p{
+                                padding: 10px 0;
+                                font-weight: 900;
+                                &:nth-child(2){
+                                    text-align: center;
+                                    font-size: 14px;
+                                    letter-spacing: 10px;
+                                    padding: 10px 0 30px;
+                                    font-weight: bold;
+                                    span{
+                                        background-color: $card-point-color;
+                                    }
+                                }
+                                &:nth-child(3){
+                                    span{
+                                        width: 20px;
+                                        height: 20px;
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                        border-radius: 50%;
+                                        &:nth-child(1){
+                                            background-color: #fff;
+                                        }
+                                        &:nth-child(2){
+                                            background-color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .btn-wrap{
+                            ul{
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 40px;
+                                li{
+                                    padding: 1% 6%; 
+                                    border: 1px solid $black-color; 
+                                    border-radius: 35px; 
+                                    cursor: pointer; 
+                                    transition: 0.5s;
+                                    font-weight: bold;
+                                    letter-spacing: 2px;
+                                    position: relative;
+                                    overflow: hidden;
+                                    a{
+                                        position: relative;
+                                        z-index: 3;
+                                    }
+                                    &::after{
+                                        content: "";
+                                        position: absolute;
+                                        width:200%;
+                                        height:100%;
+                                        left:-215%;
+                                        top:0;
+                                        background:$black-color;
+                                        transform:skew(45deg);
+                                        -webkit-transform:skew(45deg);
+                                        transition:0.45s;
+                                        -webkit-transition:0.45s;
+                                    }
+                                    &:hover{
+                                        // box-shadow: -90px 0 0 0 $black-color inset, 90px 0 0 0 $black-color inset;
+                                        &::after{
+                                            left:-15%;
+                                        }
+                                        a{
+                                            color: $white-color;
+                                        }
+                                    }
+                                    &:nth-child(2){
+                                        margin: 0 4%;
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

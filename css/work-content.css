@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "S-CoreDream-3Light";
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ohsquare";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LeferiPoint-BlackObliqueA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LeferiPoint-SpecialA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes motion {
+  0% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 65px;
+  }
+}
+@keyframes motion {
+  0% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 65px;
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #151713;
+}
+
+.tab-content .card-list {
+  flex-basis: 28%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+.tab-content .card-list .card-box {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  flex-basis: 49%;
+  height: 290px;
+}
+.tab-content .card-list .card-box.on {
+  filter: brightness(20%);
+  transform: scale(0.9);
+}
+.tab-content .card-list .card-box.active {
+  filter: brightness(100%);
+}
+.tab-content .card-list .card-box .image {
+  width: 95%;
+  margin: 7px auto 0;
+  height: 230px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+.tab-content .card-list .card-box .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tab-content .card-list .card-box p {
+  text-align: right;
+  font-size: 12px;
+}
+.tab-content .card-list .card-box h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "GmarketSansMedium", sans-serif;
+  padding-bottom: 2px;
+  font-size: 16px;
+}
+.tab-content .card-detail {
+  flex-basis: 70%;
+  height: 100%;
+}
+.tab-content .card-detail .detail-content-wrap {
+  display: none;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content {
+  display: flex;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-left {
+  flex-basis: 40%;
+  height: 500px;
+  border-radius: 25px;
+  background-color: #dddddf;
+  display: flex;
+  align-items: center;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-left::after {
+  content: "";
+  width: 2px;
+  height: 93%;
+  border-right: 2px dashed #000;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-left .image {
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 90%;
+  height: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-left .image img {
+  width: 100%;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right {
+  flex-basis: 59%;
+  height: 500px;
+  border-radius: 25px;
+  background-color: #dddddf;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc {
+  width: 90%;
+  margin: 10px auto;
+  height: 80%;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc h3 {
+  width: 100%;
+  font-size: 45px;
+  font-family: "GmarketSansMedium", sans-serif;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc h3::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc p {
+  padding: 10px 0;
+  font-weight: 900;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc p:nth-child(2) {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 10px;
+  padding: 10px 0 30px;
+  font-weight: bold;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc p:nth-child(2) span {
+  background-color: #ef5b0c;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc p:nth-child(3) span {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 50%;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc p:nth-child(3) span:nth-child(1) {
+  background-color: #fff;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .work-desc p:nth-child(3) span:nth-child(2) {
+  background-color: #000;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .btn-wrap ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .btn-wrap ul li {
+  padding: 1% 6%;
+  border: 1px solid #000;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .btn-wrap ul li a {
+  position: relative;
+  z-index: 3;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .btn-wrap ul li::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  left: -215%;
+  top: 0;
+  background: #000;
+  transform: skew(45deg);
+  -webkit-transform: skew(45deg);
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .btn-wrap ul li:hover::after {
+  left: -15%;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .btn-wrap ul li:hover a {
+  color: #fff;
+}
+.tab-content .card-detail .detail-content-wrap .detail-content .detail-right .work-content .btn-wrap ul li:nth-child(2) {
+  margin: 0 4%;
+}/*# sourceMappingURL=work-content.css.map */

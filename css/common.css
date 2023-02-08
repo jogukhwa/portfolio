@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "S-CoreDream-3Light";
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ohsquare";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LeferiPoint-BlackObliqueA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LeferiPoint-SpecialA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes motion {
+  0% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 65px;
+  }
+}
+@keyframes motion {
+  0% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 65px;
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #151713;
+}
+
+.main-content {
+  width: 100%;
+  height: 100vh;
+}
+.main-content .side-logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+}
+.main-content .side-logo img {
+  width: 100%;
+  -webkit-animation: spin 6s infinite linear;
+          animation: spin 6s infinite linear;
+}
+.main-content .content-wrap {
+  max-width: 1550px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1%;
+  display: flex;
+  position: relative;
+  border-right: 3px solid #fff;
+}
+.main-content .content-wrap .tab-menu {
+  width: 800px;
+  height: 50px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  right: -425px;
+}
+.main-content .content-wrap .tab-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .content-wrap .tab-menu ul li {
+  flex-basis: 18%;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: 3px solid #fff;
+  border-bottom: 0;
+}
+.main-content .content-wrap .tab-menu ul li:hover, .main-content .content-wrap .tab-menu ul li.on {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+.main-content .content-wrap .tab-menu ul li:hover a, .main-content .content-wrap .tab-menu ul li.on a {
+  color: #000;
+}
+.main-content .content-wrap .tab-menu ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+}
+.main-content .content-wrap .tab-content-wrap {
+  width: 100%;
+}
+.main-content .content-wrap .tab-content-wrap .content-title {
+  position: fixed;
+  left: 20px;
+}
+.main-content .content-wrap .tab-content-wrap .content-title h1 {
+  font-size: 330px;
+  font-weight: bold;
+  color: #b24227;
+  font-family: "Cafe24Ohsquare", sans-serif;
+}
+.main-content .content-wrap .tab-content-wrap .tab-content {
+  width: 100%;
+  height: 550px;
+  padding: 0px 0.5%;
+  position: relative;
+  top: 30%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=common.css.map */

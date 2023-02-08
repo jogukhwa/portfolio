@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; font-family: 'S-CoreDream-3Light'; text-transform: uppercase; box-sizing: border-box;}
+ul{list-style: none;}
+a{color: #000; text-decoration: none;}
+
+
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-BlackObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-SpecialA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$bg-color: #151713;
+$point-color: #b24227;
+$white-color:#fff;
+$black-color: #000;
+$card-point-color: #ef5b0c;
+$b-font: 'Cafe24Ohsquare', sans-serif;
+$c-font: 'GmarketSansMedium', sans-serif;
+$collection-font: 'LeferiPoint-BlackObliqueA', sans-serif;
+$collect-sub: 'LeferiPoint-SpecialA';
+$card-detail-color: #dddddf;
+
+
+@mixin button(){
+    border: 3px solid $white-color;
+    border-radius: 50px;
+    color: $white-color;
+    padding: 2px 30px;
+}
+
+@mixin button-hover(){
+    // background-color: $white-color;
+    // color: $black-color;
+    border: none;
+    &::after,
+    &::before{
+        width:100%;
+        transition:800ms ease all;
+    }
+    
+}
+
+@mixin media($point){
+    @media #{$point}{
+        @content;
+    }
+}
+
+
+@mixin bg-title{
+    font-size: 330px;
+    font-weight: bold;
+    color: $point-color;
+    font-family: $b-font;
+}
+
+
+@mixin media($point){
+    @media #{$point}{
+        @content;
+    }
+}
+
+
+//키프레임
+
+@keyframes spin {
+    100%{transform: rotate(360deg);}
+    
+}
+
+@keyframes motion {
+	0% {bottom: 50px;} 
+	100% {bottom: 65px;}
+}
+
+
+
