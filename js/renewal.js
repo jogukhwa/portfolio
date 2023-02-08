@@ -7,25 +7,25 @@ $("document").ready(function(){
     let work_list = [
         design = {
             id : 1,
-            img : "/images/card-re-01-1.png",
+            img : "images/card-re-01-1.png",
             number : "1",
             title : "gentle monster"
         },
         {
             id : 2,
-            img : "/images/card-re-02-1.png",
+            img : "images/card-re-02-1.png",
             number : "2",
             title : "carhatt"
         },
         {
             id : 3,
-            img : "/images/card-re-03.jpg",
+            img : "images/card-re-03.jpg",
             number : "3",
             title : "staub"
         },
         {
             id : 4,
-            img : "/images/card-re-04.png",
+            img : "images/card-re-04.png",
             number : "4",
             title : "subway"
         }
@@ -47,7 +47,7 @@ $("document").ready(function(){
     let work_detail = [
         design = {
             id: 1,
-            img : "/images/card-re-01.png",
+            img : "images/card-re-01.png",
             title: "gentle monster",
             desc: "eyewear brand",
             highlight: " redesign ",
@@ -62,7 +62,7 @@ $("document").ready(function(){
         },
         {
             id: 2,
-            img : "/images/card-re-02.png",
+            img : "images/card-re-02.png",
             title: "carhatt",
             desc: "street fashion brand",
             highlight: " redesign ",
@@ -77,7 +77,7 @@ $("document").ready(function(){
         },
         {
             id: 3,
-            img : "/images/card-re-03.png",
+            img : "images/card-re-03.png",
             title: "staub",
             desc: "cookware brand",
             highlight: " redesign ",
@@ -92,7 +92,7 @@ $("document").ready(function(){
         },
         {
             id: 4,
-            img : "/images/card-re-04.png",
+            img : "images/card-re-04.png",
             title: "subway",
             desc: "sandwich brand",
             highlight: " redesign ",
